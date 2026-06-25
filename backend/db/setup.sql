@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS refresh_tokens (
 CREATE TABLE IF NOT EXISTS ticket_audit_log (
   id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
   ticket_id  INT UNSIGNED NOT NULL,
-  user_id    INT UNSIGNED NOT NULL,
+  user_id    INT UNSIGNED NULL,
   action     VARCHAR(50)  NOT NULL,
   field      VARCHAR(50)  NULL,
   old_value  VARCHAR(255) NULL,
