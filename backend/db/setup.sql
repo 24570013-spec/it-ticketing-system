@@ -135,9 +135,6 @@ INSERT IGNORE INTO sla_rules (priority, response_hours, resolution_hours) VALUES
   ('medium', 2,  4),
   ('low',    4,  8);
 
--- 9. SLA deadline column on tickets (Migration 005)
-ALTER TABLE tickets ADD COLUMN IF NOT EXISTS sla_deadline DATETIME NULL;
-
 -- 10. Notifications (Migration 005)
 CREATE TABLE IF NOT EXISTS notifications (
   id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
