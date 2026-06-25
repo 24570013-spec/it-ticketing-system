@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files — JANGAN diupload ke GitHub!
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Build output
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploads (file yang diupload user)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Kiro specs (opsional — boleh diupload kalau mau)
+# .kiro/
